@@ -18,6 +18,7 @@ class ProgramFixtures extends Fixture implements DependentFixtureInterface
         $program->setTitle('Haunting of Hill House');
         $program->setSynopsis('A haunted house.');
         $program->setCategory($this->getReference('category_Horreur'));
+        $program->setPoster('build\hillhouse.jpg');
         $manager->persist($program);
 
         $manager->flush();
@@ -26,6 +27,7 @@ class ProgramFixtures extends Fixture implements DependentFixtureInterface
         $program->setTitle('Brooklyn Nine-Nine');
         $program->setSynopsis('Cops being funny (for once)');
         $program->setCategory($this->getReference('category_Comedie'));
+        $program->setPoster('build/b99.jpg');
         $manager->persist($program);
 
         $manager->flush();
@@ -34,6 +36,7 @@ class ProgramFixtures extends Fixture implements DependentFixtureInterface
         $program->setTitle('Crazy Ex-Girlfriend');
         $program->setSynopsis('A stalker that wants to be loved.');
         $program->setCategory($this->getReference('category_Comedie'));
+        $program->setPoster('build/ceg.jpg');
         $manager->persist($program);
 
         $manager->flush();
@@ -42,6 +45,7 @@ class ProgramFixtures extends Fixture implements DependentFixtureInterface
         $program->setTitle('She-Ra');
         $program->setSynopsis('FOR THE HONOR OF GRAYSKULL !!!');
         $program->setCategory($this->getReference('category_Animation'));
+        $program->setPoster('build/shera.jpg');
         $manager->persist($program);
 
         $manager->flush();
@@ -50,6 +54,7 @@ class ProgramFixtures extends Fixture implements DependentFixtureInterface
         $program->setTitle('Community');
         $program->setSynopsis('WTF, so meta.');
         $program->setCategory($this->getReference('category_Comedie'));
+        $program->setPoster('build/community.jpg');
         $manager->persist($program);
 
         $manager->flush();
@@ -58,6 +63,7 @@ class ProgramFixtures extends Fixture implements DependentFixtureInterface
         $program->setTitle('The Last of Us');
         $program->setSynopsis('Should not have eaten carbs');
         $program->setCategory($this->getReference('category_Aventure'));
+        $program->setPoster('build/tlou.jpg');
         $manager->persist($program);
 
         $manager->flush();
