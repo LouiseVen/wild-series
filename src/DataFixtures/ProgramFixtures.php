@@ -19,6 +19,7 @@ class ProgramFixtures extends Fixture implements DependentFixtureInterface
         $program->setSynopsis('A haunted house.');
         $program->setCategory($this->getReference('category_Horreur'));
         $program->setPoster('build\hillhouse.jpg');
+        $this->addReference('program_HillHouse', $program);
         $manager->persist($program);
 
         $manager->flush();
@@ -28,6 +29,7 @@ class ProgramFixtures extends Fixture implements DependentFixtureInterface
         $program->setSynopsis('Cops being funny (for once)');
         $program->setCategory($this->getReference('category_Comedie'));
         $program->setPoster('build/b99.jpg');
+        $this->addReference('program_Brooklyn99', $program);
         $manager->persist($program);
 
         $manager->flush();
@@ -37,6 +39,7 @@ class ProgramFixtures extends Fixture implements DependentFixtureInterface
         $program->setSynopsis('A stalker that wants to be loved.');
         $program->setCategory($this->getReference('category_Comedie'));
         $program->setPoster('build/ceg.jpg');
+        $this->addReference('program_CrazyExGirlfriend', $program);
         $manager->persist($program);
 
         $manager->flush();
@@ -46,6 +49,7 @@ class ProgramFixtures extends Fixture implements DependentFixtureInterface
         $program->setSynopsis('FOR THE HONOR OF GRAYSKULL !!!');
         $program->setCategory($this->getReference('category_Animation'));
         $program->setPoster('build/shera.jpg');
+        $this->addReference('program_SheRa', $program);
         $manager->persist($program);
 
         $manager->flush();
@@ -55,6 +59,7 @@ class ProgramFixtures extends Fixture implements DependentFixtureInterface
         $program->setSynopsis('WTF, so meta.');
         $program->setCategory($this->getReference('category_Comedie'));
         $program->setPoster('build/community.jpg');
+        $this->addReference('program_Community', $program);
         $manager->persist($program);
 
         $manager->flush();
@@ -64,6 +69,7 @@ class ProgramFixtures extends Fixture implements DependentFixtureInterface
         $program->setSynopsis('Should not have eaten carbs');
         $program->setCategory($this->getReference('category_Aventure'));
         $program->setPoster('build/tlou.jpg');
+        $this->addReference('program_TheLastOfUs', $program);
         $manager->persist($program);
 
         $manager->flush();
